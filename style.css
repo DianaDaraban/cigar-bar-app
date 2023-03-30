@@ -1,0 +1,729 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --GOLD: linear-gradient(
+    45deg,
+    rgba(186, 148, 62, 1) 0%,
+    rgba(236, 172, 32, 1) 20%,
+    rgba(186, 148, 62, 1) 39%,
+    rgba(249, 244, 180, 1) 50%,
+    rgba(186, 148, 62, 1) 60%,
+    rgba(236, 172, 32, 1) 80%,
+    rgba(186, 148, 62, 1) 100%
+  );
+  --GOLDTRANSPARENTTORIGHT: linear-gradient(
+    to right,
+    rgba(186, 148, 62, 1) 0%,
+    rgba(236, 172, 32, 0.9) 20%,
+    rgba(186, 148, 62, 0.8) 39%,
+    rgba(249, 244, 180, 0.5) 50%,
+    rgba(186, 148, 62, 0.2) 60%,
+    rgba(236, 172, 32, 0.1) 80%,
+    rgba(186, 148, 62, 0) 100%
+  );
+  --BLACKANDGOLD: linear-gradient(
+    90deg,
+    rgb(255, 249, 237) 0%,
+    rgb(236, 221, 188) 20%,
+    rgba(186, 148, 62, 1) 39%,
+    rgb(255, 255, 255) 50%,
+    rgb(235, 231, 210) 60%,
+    rgba(236, 172, 32, 1) 80%,
+    rgb(255, 255, 255) 100%
+  );
+  --BLACKANDGOLD2: linear-gradient(
+    45deg,
+    rgb(51, 39, 27) 0%,
+    rgb(120, 78, 11) 20%,
+    rgb(161, 114, 4) 39%,
+    rgb(84, 58, 58) 50%,
+    rgb(167, 138, 10) 60%,
+    rgb(194, 137, 13) 80%,
+    rgb(72, 27, 27) 100%
+  );
+  --FONT1: 'Abel', sans-serif;
+  --FONT2: 'Archivo', sans-serif;
+  --HANDWRITING: 'Ephesis', cursive;
+  --RED: #8c0e0f;
+  --BLUE: #0b2838;
+  --DARKBLUE: #031b28;
+  --BEIGE: #e0bf99;
+  --LIGHTBEIGE: #ffead1;
+}
+/* THE BIG CONTAINER */
+/* THE BIG CONTAINER */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* MAIN CONTAINER STYLING. MAIN CONTAINER CONTAINS THE BACKGROUND VIDEO */
+/* MAIN CONTAINER STYLING. MAIN CONTAINER CONTAINS THE BACKGROUND VIDEO */
+/* MAIN CONTAINER STYLING. MAIN CONTAINER CONTAINS THE BACKGROUND VIDEO */
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.main-container video {
+  z-index: -100;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* THE SECOND CONTAINER STYLING */
+/* THE SECOND CONTAINER STYLING */
+/* THE SECOND CONTAINER STYLING */
+
+.second-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+/* INTRO VIDEOS STYLING */
+/* INTRO VIDEOS STYLING */
+/* INTRO VIDEOS STYLING */
+
+#intro {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+}
+#intro-black {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+}
+
+video {
+  width: 100vw;
+  height: auto;
+  overflow: auto;
+  object-fit: cover;
+}
+
+/* HEADER INFO STYLING */
+/* HEADER INFO STYLING */
+/* HEADER INFO STYLING */
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.polyline {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1500px;
+  height: 1200px;
+  fill: transparent;
+  stroke: var(--RED);
+  stroke-width: 0.4em;
+}
+
+.pic-frame {
+  margin-right: 7em;
+  width: 55%;
+  height: 75%;
+  background-image: url(./img/moreCigars4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  /* border: 1px solid rgb(49, 38, 8); */
+}
+
+.frame-text {
+  position: relative;
+  font-family: var(--HANDWRITING);
+  z-index: 150;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  margin-left: 1.5em;
+  padding: 0.2em;
+  font-size: 7.8rem;
+  background: var(--GOLD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 200%;
+  background-position: left;
+  margin-bottom: 1em;
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+
+/* TESTIMONIALS BOXES STYLING */
+/* TESTIMONIALS BOXES STYLING */
+/* TESTIMONIALS BOXES STYLING */
+
+.testimonials-container {
+  width: 100vw;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5em; */
+
+  position: relative;
+}
+
+.testimonials {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
+.testimonial-items-1,
+.testimonial-items-2,
+.testimonial-items-3 {
+  width: 540px;
+  height: 300px;
+  background-color: var(--DARKBLUE);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-items-2 {
+  z-index: 2;
+}
+
+.testimonial-items-1,
+.testimonial-items-3 {
+  transform: scale(0.7);
+  opacity: 0.7;
+}
+
+.testimonial-leaf-1 {
+  position: absolute;
+  top: -153px;
+  left: -130px;
+  width: 166%;
+  height: 166%;
+  background-image: url(./img/fundal_testimonial_2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.testimonial-text-container-1 {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  font-family: var(--HANDWRITING);
+  color: var(--BEIGE);
+  font-size: 1.6rem;
+}
+
+.testimonial-text-container-1 p {
+  font-family: var(--FONT1);
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding-left: 2em;
+}
+
+.container-picture-testimonial {
+  width: 60px;
+  height: 280px;
+  position: absolute;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+}
+
+.star-1,
+.star-2,
+.star-3,
+.star-4,
+.star-5 {
+  background: var(--GOLD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 200%;
+  background-position: left;
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+
+.testimonial-title {
+  font-size: 2.4rem;
+  color: var(--RED);
+  font-weight: 500;
+}
+.testimonial-name {
+  font-size: 2rem;
+  color: var(--BEIGE);
+  font-weight: 500;
+}
+
+/* TESTIMONIAL ARROWS */
+/* TESTIMONIAL ARROWS */
+/* TESTIMONIAL ARROWS */
+
+.fa-chevron-right.home {
+  position: absolute;
+  top: 42%;
+  right: 7.7em;
+  color: var(--BEIGE);
+  font-size: 4em;
+  cursor: pointer;
+  z-index: 10;
+}
+.fa-chevron-left {
+  position: absolute;
+  top: 42%;
+  left: 7.7em;
+  color: var(--BEIGE);
+  font-size: 4em;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 11;
+}
+
+/* TRANSITION SETTER */
+/* TRANSITION SETTER */
+
+.transition {
+  animation: fading 0.7s ease-in-out;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.transition2 {
+  animation: fading-and-translate 1s ease-in-out;
+}
+
+@keyframes fading-and-translate {
+  0% {
+    transform: translate(500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.transition3 {
+  animation: fading-and-translate2 1s ease-in-out;
+  z-index: 1;
+}
+
+@keyframes fading-and-translate2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-500px);
+  }
+}
+
+.transition4 {
+  animation: fading-and-translate3 0.7s ease-in-out;
+}
+
+@keyframes fading-and-translate3 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(500px);
+  }
+}
+.transition5 {
+  animation: fading-and-translate4 0.7s ease-in-out;
+}
+
+@keyframes fading-and-translate4 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(500px);
+  }
+}
+
+.fifty-chars {
+  width: 45ch;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+}
+.fifteen-chars {
+  width: 15ch;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* SECOND CONTAINER SLIDE - BEST CIGAR INFO */
+/* SECOND CONTAINER SLIDE - BEST CIGAR INFO */
+/* SECOND CONTAINER SLIDE - BEST CIGAR INFO */
+/* SECOND CONTAINER SLIDE - BEST CIGAR INFO */
+
+.home-elem-container {
+  width: 100%;
+  height: 400px;
+  padding: 2em 6em 2em 6em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-home-elem {
+  border: 2px solid;
+  border-image-slice: 1;
+  width: 40%;
+  height: 100%;
+  border-image-source: linear-gradient(
+    65deg,
+    rgba(186, 148, 62, 1) 0%,
+    rgba(236, 172, 32, 0.5) 20%,
+    rgba(186, 148, 62, 0.4) 39%,
+    rgba(249, 244, 180, 0.3) 50%,
+    rgba(186, 148, 62, 0.2) 60%,
+    rgba(236, 172, 32, 0) 80%,
+    rgba(186, 148, 62, 0) 100%
+  );
+  background-color: transparent;
+  color: var(--BEIGE);
+  font-family: var(--FONT1);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+}
+
+.left-home-elem h1 {
+  word-spacing: 0.3em;
+  font-size: 3em;
+  font-family: var(--HANDWRITING);
+  background: var(--GOLD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 200%;
+  background-position: left;
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+
+.left-home-elem p {
+  font-size: 1.25rem;
+  text-align: justify;
+  padding-right: 2em;
+  text-indent: 2em;
+}
+
+.right-out-elements {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url('./items/bolivar-cofradia-554_home.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    65deg,
+    rgba(186, 148, 62, 0) 0%,
+    rgba(236, 172, 32, 0) 20%,
+    rgba(186, 148, 62, 0.3) 39%,
+    rgba(249, 244, 180, 0.6) 50%,
+    rgba(186, 148, 62, 0.7) 60%,
+    rgba(236, 172, 32, 0.8) 80%,
+    rgba(186, 148, 62, 1) 100%
+  );
+  color: var(--BEIGE);
+  font-family: var(--FONT1);
+  position: relative;
+  z-index: 100;
+}
+
+.main-item-brand {
+  background: var(--GOLD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 200%;
+  background-position: left;
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+.first-item-brand {
+  background: var(--GOLD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 200%;
+  background-position: left;
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+.second-item-brand {
+  background: var(--GOLD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 200%;
+  background-position: left;
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+.third-item-brand {
+  background: var(--GOLD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 200%;
+  background-position: left;
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+
+.main-item-text {
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5em;
+  font-size: 2.2rem;
+  position: absolute;
+  top: 1.5em;
+  left: 2em;
+}
+
+.first-item-text {
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 5.4em;
+  gap: 0.5em;
+  transform: rotate(-90deg);
+  z-index: 250;
+  font-size: 1.5rem;
+}
+.second-item-text {
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 5.4em;
+  gap: 0.5em;
+  transform: rotate(-90deg);
+  z-index: 250;
+  font-size: 1.5rem;
+}
+.third-item-text {
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 5.4em;
+  gap: 0.5em;
+  transform: rotate(-90deg);
+  z-index: 250;
+  font-size: 1.5rem;
+}
+
+.first-right-elem,
+.second-right-elem,
+.third-right-elem {
+  /* color: var(--RED); */
+  position: relative;
+  width: 10%;
+  height: 100%;
+  border: 1px solid;
+  background-color: black;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.068),
+    hsla(201, 85%, 8%, 0.295)
+  );
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+}
+
+.first-right-elem:hover {
+  width: 80%;
+  transition: all 1.3s;
+  background-image: none;
+  position: relative;
+  z-index: 90;
+}
+
+.first-right-elem:hover .first-item-text {
+  transform: rotate(0);
+  font-size: 2.2rem;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 1.5em;
+  font-weight: 400;
+  animation: fade-at-rotation 1.3s ease-in-out;
+}
+
+@keyframes fade-at-rotation {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.second-right-elem:hover {
+  width: 80%;
+  transition: all 1.3s;
+  background-image: none;
+  position: relative;
+  z-index: 80;
+}
+
+.second-right-elem:hover .second-item-text {
+  transform: rotate(0);
+  font-size: 2.2rem;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 1.5em;
+  font-weight: 400;
+  animation: fade-at-rotation 1.3s ease-in-out;
+}
+
+.third-right-elem:hover {
+  width: 80%;
+  transition: all 1.3s;
+  background-image: none;
+
+  position: relative;
+  z-index: 2;
+}
+
+.third-right-elem:hover .third-item-text {
+  transform: rotate(0);
+  font-size: 2.2rem;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 1.5em;
+  font-weight: 400;
+  animation: fade-at-rotation 1.3s ease-in-out;
+}
+
+.slide-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  object-fit: contain;
+  height: 100%;
+
+  z-index: 1;
+}

@@ -1,0 +1,454 @@
+@media screen and (max-width: 1700px) {
+  .about-cigar-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .polyline {
+    display: none;
+  }
+}
+@media screen and (max-width: 1490px) {
+  form {
+    width: 600px;
+    height: 300px;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .frame-text-contact {
+    padding-left: 4.8em;
+  }
+
+  .footer-sitemap {
+    width: 280px;
+  }
+
+  .navbar ul {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .frame-text {
+    font-size: 6rem;
+  }
+  .left-home-elem h1 {
+    font-size: 2.5em;
+  }
+
+  .left-home-elem p {
+    font-size: 1.1em;
+  }
+  .main-item-text {
+    font-size: 1.8rem;
+  }
+  .first-right-elem:hover .first-item-text {
+    font-size: 1.8rem;
+  }
+
+  .second-right-elem:hover .second-item-text {
+    font-size: 1.8rem;
+  }
+
+  .third-right-elem:hover .third-item-text {
+    font-size: 1.8rem;
+  }
+
+  .first-item-text,
+  .second-item-text,
+  .third-item-text {
+    font-size: 1.2rem;
+    padding-bottom: 7.2em;
+  }
+  .testimonial-leaf-1 {
+    display: none;
+  }
+
+  .fa-chevron-right {
+    right: 6.5em;
+  }
+
+  .fa-chevron-left {
+    left: 6.5em;
+  }
+  .about-cigar-container1 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .anatomy-cigar p,
+  .components-description-title {
+    font-size: 1.3rem;
+  }
+  .anatomy-cigar h2,
+  .components-description-title,
+  .info-cigar-title {
+    font-size: 1.5rem;
+  }
+
+  .frame-text {
+    font-size: 2rem;
+  }
+
+  .video-container {
+    justify-content: start;
+    transform: scale(0.8);
+  }
+
+  .about-cigar-container1 {
+    margin-bottom: 5em;
+  }
+
+  /* .main-container {
+    height: max-content;
+  } */
+
+  .cigar-components-container {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .info-list-container {
+    margin-left: 8em;
+    width: 55%;
+  }
+
+  .about-all-container {
+    flex-direction: column;
+  }
+
+  .single-info-container {
+    height: 200px;
+  }
+
+  .mood-item-title {
+    font-size: 4.5rem;
+    margin-top: 1.5em;
+  }
+
+  .mood-first-item-container {
+    width: 100vw;
+    height: 820px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .item-interior-elements-container {
+    width: 770px;
+    height: 450px;
+    margin-right: 3em;
+  }
+
+  footer {
+    height: max-content;
+  }
+
+  .footer-form-container button {
+    height: 2.8em;
+  }
+  .footer-form-container {
+    width: max-content;
+    height: max-content;
+  }
+
+  .bottom-btns {
+    width: 100%;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .social-icons-container {
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    /* bottom: 1em; */
+
+    width: 3em;
+    height: 15em;
+    right: 1em;
+  }
+
+  .social-icon-contact {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .social-icon-title {
+    display: none;
+  }
+
+  .contact-details {
+    width: 200px;
+  }
+
+  .footer-sitemap {
+    width: 220px;
+  }
+
+  .left-home-elem h1 {
+    font-size: 2em;
+  }
+
+  .left-home-elem p {
+    font-size: 1em;
+  }
+  .main-item-text {
+    font-size: 1.5rem;
+  }
+  .first-right-elem:hover .first-item-text {
+    font-size: 1.5rem;
+  }
+
+  .second-right-elem:hover .second-item-text {
+    font-size: 1.5rem;
+  }
+
+  .third-right-elem:hover .third-item-text {
+    font-size: 1.5rem;
+  }
+
+  .first-item-text,
+  .second-item-text,
+  .third-item-text {
+    font-size: 1rem;
+    padding-bottom: 8.7em;
+  }
+
+  .testimonial-title {
+    font-size: 1.8rem;
+  }
+  .testimonial-name {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-text-container-1 p {
+    font-size: 1rem;
+  }
+  .fa-chevron-right {
+    right: 5.5em;
+  }
+
+  .fa-chevron-left {
+    left: 5.5em;
+  }
+  .components-description-container {
+    width: 50vw;
+  }
+
+  .cigar-components-container {
+    flex-direction: column;
+    gap: 2.5em;
+  }
+
+  .about-cigar-container1 {
+    flex-direction: column;
+    margin-bottom: 6em;
+  }
+
+  .video-container {
+    margin-top: 6em;
+  }
+
+  .bottom-btns {
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .footer-sitemap p {
+    border-bottom: none;
+  }
+
+  .fa-house-chimney,
+  .fa-smoking,
+  .fa-face-smile,
+  .fa-bag-shopping,
+  .fa-address-book {
+    display: none;
+  }
+
+  iframe {
+    width: 500px;
+    height: 350px;
+    filter: invert(100%);
+  }
+
+  .contact-details {
+    height: 300px;
+  }
+
+  .gift {
+    display: none;
+  }
+
+  .frame-text-contact {
+    font-size: 2.5rem;
+  }
+
+  .contact-details {
+    margin-left: 6em;
+  }
+
+  .frame-text {
+    font-size: 5rem;
+  }
+  .fa-chevron-right {
+    right: 4.5em;
+  }
+
+  .fa-chevron-left {
+    left: 4.5em;
+  }
+
+  .video-container {
+    justify-content: end;
+    transform: scale(0.7);
+  }
+  .single-info-container {
+    width: 90%;
+    height: 220px;
+  }
+
+  .first-video-container iframe,
+  .second-video-container iframe,
+  .third-video-container iframe,
+  .fourth-video-container iframe {
+    width: 450px;
+    height: 280px;
+  }
+
+  .single-info-container:last-child {
+    margin-bottom: 1000px;
+  }
+
+  .frame-text {
+    font-size: 3.5rem;
+  }
+
+  body {
+    width: 100vw;
+    height: max-content;
+    background-color: black;
+  }
+
+  .single-info-text-first {
+    font-size: 1rem;
+  }
+  .single-info-title {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    padding: 2em;
+  }
+
+  .footer-main-container {
+    width: 100%;
+  }
+
+  .footer-form-container {
+    width: max-content;
+    padding-left: 0;
+    gap: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-details {
+    height: 300px;
+    width: 150px;
+  }
+
+  .footer-main-container {
+    width: 90vw;
+  }
+
+  form {
+    width: 450px;
+    height: 250px;
+    flex-direction: row;
+    gap: 3em;
+    margin-left: 10em;
+  }
+
+  .frame-text-contact {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 3em;
+  }
+
+  .firstName-container,
+  .lastName-container,
+  .mail-container,
+  .phone-container,
+  .textArea-container {
+    width: 150px;
+  }
+
+  input {
+    width: 150px;
+    height: 1em;
+    font-size: 0.8rem;
+  }
+
+  textarea {
+    width: 150px;
+    height: 4em;
+  }
+
+  .input-phone {
+    width: 150px;
+  }
+
+  .social-icons-container {
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+    /* bottom: 1em; */
+
+    width: 2.5em;
+    height: 10em;
+    right: 1em;
+  }
+
+  .social-icon-contact {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .fa-brands {
+    font-size: 1.5rem;
+  }
+
+  .contact-details {
+    margin-left: 2em;
+  }
+
+  .map-container {
+    padding-right: 2em;
+  }
+  .frame-text {
+    font-size: 3.5rem;
+  }
+  .fa-chevron-right {
+    right: 3.5em;
+  }
+
+  .fa-chevron-left {
+    left: 3.5em;
+  }
+
+  .cigar-components-container {
+    flex-direction: column;
+  }
+}

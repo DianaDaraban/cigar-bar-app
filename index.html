@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Ephesis&family=Great+Vibes&family=Mr+De+Haviland&family=Mrs+Saint+Delafield&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/a8f2219a83.css"
+      crossorigin="anonymous"
+    /> -->
+
+    <script
+      src="https://kit.fontawesome.com/a8f2219a83.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./commonElem.css" />
+    <link rel="stylesheet" href="./commonEffects.css" />
+    <link rel="stylesheet" href="./style.css" />
+    
+        <link rel="stylesheet" href="./mediaQuery.css" />
+
+
+    <script defer src="./commonElem.js"></script>
+    <script defer src="./script.js"></script>
+    <title>Cigar Bar Website</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- INTRO OF THE PAGE -->
+      <div id="intro">
+        <!-- <video autoplay muted loop id="myVideo">
+        <source src="./img/whisky.mp4" type="video/mp4" />
+      </video> -->
+      </div>
+      <div id="intro-black"></div>
+      <!-- SUSCRIBTION BUTTON -->
+      <!-- SUSCRIBTION BUTTON -->
+      <a href="#logo" class="gift">
+        <div class="gift-text"></div>
+        <div class="number">1</div>
+      </a>
+
+      <div class="pop-up hidden">
+        <div class="left-img">
+          <img src="./img/whiskyAndTobacco.jpg" alt="cigar" />
+        </div>
+        <div class="right-info">
+          <span class="close-btn">&times;</span>
+          <h1>Unlock 10% off your first order</h1>
+          <h2>Sign up for special offers and updates</h2>
+          <input
+            type="email"
+            placeholder="Email"
+            value=""
+            class="input-data"
+            required
+          />
+          <button type="submit" class="submit-btn">Unlock offer</button>
+          <h4>By signing up, you agree to receive email marketing</h4>
+          <h3 class="close-btn">No, thanks</h3>
+        </div>
+      </div>
+      <div class="popUp-background hidden"></div>
+
+      <!-- MAIN CONTAINER THAT HOLD THE UPPER INFORMATION -->
+      <!-- MAIN CONTAINER THAT HOLD THE UPPER INFORMATION -->
+      <div class="main-container">
+        <video autoplay muted loop id="myVideo">
+          <source src="./img/smoke2.mp4" type="video/mp4" />
+        </video>
+
+        <!-- NAVIGATION BAR -->
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar">
+          <div class="logo" id="logo"></div>
+          <ul>
+            <li><a href="index.html" class="current-page">Home</a></li>
+            <li>
+              <a href="aboutCigars.html">About Cigars</a>
+            </li>
+            <li><a href="./cigarMood.html">Cigar mood</a></li>
+            <li><a href="cigarShop.html">Cigar shop</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+          <!-- SEARCHING BOX -->
+          <!-- SEARCHING BOX -->
+          <!-- SEARCHING BOX -->
+          <div class="right-side-btns">
+            <div class="search-label">
+              <input
+                type="text"
+                value=""
+                placeholder="Search"
+                class="search-input"
+              />
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </div>
+            <!-- SIGN IN BOX -->
+            <!-- SIGN IN BOX -->
+            <!-- SIGN IN BOX -->
+            <div class="sign-in-container">
+              <div class="sign-in-icon"><i class="fa-solid fa-user"></i></div>
+              <div class="sign-in-pop hidden">
+                <div class="left-img-sign">
+                  <h2 class="left-title">New Here?</h2>
+                  <p>Sign up and discover a great amount of new offers!</p>
+                  <button class="sign-up">Sign Up</button>
+                </div>
+                <div class="right-info-sign">
+                  <span class="close-btn-sign">&times;</span>
+                  <h2>Login to your account</h2>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    value=""
+                    class="input-data-sign"
+                    required
+                  />
+                  <input
+                    type="password"
+                    placeholder="Password (8 characters minimum)"
+                    required
+                    id="password"
+                    name="password"
+                    minlength="8"
+                    autocomplete="current-password"
+                  />
+                  <button type="submit" class="submit-btn-sign">Sign In</button>
+                                    <div class="forgot-password">Forgot password?</div>
+                </div>
+              </div>
+              <div class="sign-in-background hidden"></div>
+            </div>
+            <!-- SHOPPING CART CONTAINER -->
+            <!-- SHOPPING CART CONTAINER -->
+            <!-- SHOPPING CART CONTAINER -->
+            <div class="shopping-cart-container">
+              <div class="shopping-cart-icon">
+                <i class="fa-regular fa-cart-shopping"></i>
+                                <div class="shopping-counter">0</div>
+              </div>
+              <div class="shopping-cart hidden">
+                <div class="info-container">
+                  <span class="close-btn">&times;</span>
+                  <div class="products-first-row">
+                    <div class="product">Product</div>
+                    <div class="quantity">Quantity</div>
+                    <div class="price">Price</div>
+                    <div class="remove-btn">Remove</div>
+                  </div>
+                  <div class="items-row">
+                    <div class="item">Product</div>
+                    <div class="item-quantity">
+                      <div class="decr-container">
+                        <i class="fa-sharp fa-solid fa-minus"></i>
+                      </div>
+                      <div class="counter-container">1</div>
+                      <div class="incr-container">
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                    <div class="item-price-box">299 €</div>
+                    <div class="item-remove-btn">&times;</div>
+                  </div>
+                  <!-- <input
+                        type="email"
+                        placeholder="Email"
+                        value=""
+                        class="input-data"
+                        required
+                      />
+                      <button type="submit" class="submit-btn">Unlock offer</button>
+                      <h4>By signing up, you agree to receive email marketing</h4> -->
+                  <h3 class="shipping close-btn">No, thanks</h3>
+                </div>
+              </div>
+              <div class="shopping-background hidden"></div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- SOCIAL ICONS -->
+        <!-- SOCIAL ICONS -->
+        <div class="social-icons">
+          <div class="facebook">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="tiktok">
+            <a href="https://www.tiktok.com/en/" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+          <div class="instagram">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="youtube">
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <!-- HEADER WITH INFORMATIONS -->
+        <!-- HEADER WITH INFORMATIONS -->
+        <div class="video-container">
+          <div class="pic-frame reveal3 fade-left"></div>
+          <svg class="polyline reveal3 fade-right">
+            <polyline
+              points="200,200 200,30 1350,30 1350,670 200,670 200,490"
+            />
+          </svg>
+          <h1 class="frame-text reveal3 fade-right">The best cigars in town</h1>
+        </div>
+      </div>
+      <!-- CONTAINER FOR THE LOWER PART OF THE HOME PAGE -->
+      <div class="second-container">
+        <div class="home-elem-container">
+          <div class="left-home-elem">
+            <h1>Our Most Popular Cigars</h1>
+            <p>Our Most Popular Cigars category is a list of Cigar Bar' top selling cigars that we guarantee will impress.</p>
+            <p>We provide a wide selection of high-quality cigar products for beginners and seasoned smokers. At Cigar Bar you can find various cigar brands from brands including  Arturo Fuente, Montecristo, Padron, and many more.</p>
+          </div>
+          <div class="right-out-elements">
+            <div class="main-item-text">
+  
+                <div class="main-item-brand">Bolivar</div>
+                <p class="main-item-title"> Cofradia 554</p>
+              </div>
+            <div class="first-right-elem">
+              <img src="./items/arturo_fuente_Don_Carlos_home.png" alt="cigars" class="slide-img">
+              <div class="first-item-text">
+  
+                <div class="first-item-brand">Arturo Fuente</div>
+                <p class="first-item-title"> Don Carlos</p>
+              </div>
+            </div>
+            <div class="second-right-elem"><img src="./items/avo_fogata_special_home.png" alt="cigars" class="slide-img"><div class="second-item-text" >
+  
+                <div class="second-item-brand">Avo</div>
+                <p class="second-item-title"> Fogata Special</p>
+              </div></div>
+            <div class="third-right-elem"><img src="./items/ashton_symmetry_sublime_home.png" alt="cigars" class="slide-img">
+                            <div class="third-item-text">
+  
+                <div class="third-item-brand">Ashton</div>
+                <p class="third-item-title"> Symmetry Sublime</p>
+              </div> </div>
+        
+          </div>
+        </div>
+        <div class="testimonials-container" id="testimonial-slider">
+
+                      <div class="right-arrow-testimonial"><i class="fa-sharp fa-solid fa-chevron-right home"></i></div>
+            <div class="right-arrow-testimonial"><i class="fa-sharp fa-solid fa-chevron-left"></i></div>
+            <div class="testimonials">
+
+              <div class="testimonial-items-1">
+                <div class="testimonial-text-container-1">
+                  <div class="container-picture-testimonial">
+                    <div class="star-1">
+                      <i class="fa-sharp fa-regular fa-star"></i>
+                    </div>
+                    <div class="star-2">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="star-3">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="star-4">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="star-5">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <h3 class="testimonial-title">A great Cigar Bar</h3>
+                  <p>
+                    "Out if all the Connoisseur bars, this is my favourite. Great
+                    views of Tokyo station and a very relaxed environment. Busy on
+                    weekends days yet there is always a space for you. Cigar
+                    selection is broad and you can bring your own. Do try as you
+                    won’t be disappointed."
+                  </p>
+                  <h3p class="testimonial-name">Frugal Traveller</h3p>
+                </div>
+            </div>
+    
+                      <div class="testimonial-items-2">
+                <div class="testimonial-text-container-1">
+                  <div class="container-picture-testimonial">
+                    <div class="star-1">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="star-2">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="star-3">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="star-4">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="star-5">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <h3 class="testimonial-title">Great Cigar Bar</h3>
+                  <p>
+                    "Well located and with a grand walk in humidor with no less than 50 types of cigars on display. Before 5Pm there is no cover charge, after 5PM, its Yen1080. Not bad at all. You can bring your own cigars or buy one right there. Good menu but I would suggest meals next door at the Teppan Yaki restaurant."
+                  </p>
+                  <h3p class="testimonial-name">Ozlanka</h3p>
+                </div>
+                <div class="testimonial-leaf-1"></div>
+            </div>
+    
+                      <div class="testimonial-items-3">
+                <div class="testimonial-text-container-1">
+                  <div class="container-picture-testimonial">
+                    <div class="star-1">
+                      <i class="fa-sharp fa-regular fa-star"></i>
+                    </div>
+                    <div class="star-2">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="star-3">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="star-4">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="star-5">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <h3 class="testimonial-title">Extensive cigar collection</h3>
+                  <p>
+                    "A decent enough place (although I did find that their whisky servings were a little small) with good service but what really stands out is the small walk-in humidor: a large selection of cuban and non-cuban cigars in perfect condition."
+                  </p>
+                  <h3p class="testimonial-name">Oliwa Vasicek</h3p>
+                </div>
+            </div>
+            </div>
+      </div>
+
+      <!-- FOOTER CONTAINER -->
+      <!-- FOOTER CONTAINER -->
+      <!-- FOOTER CONTAINER -->
+      <footer>
+        <div class="footer-main-container">
+          <div class="footer-contact-container">
+            <div class="footer-logo"></div>
+            <div class="footer-address">
+              <h3>Address</h3>
+              <p>15th Smokers street, Veryskmoked District, Wonderland</p>
+            </div>
+            <div class="tel-number">
+              <h3>Phone Number</h3>
+              <p>+40 722 123 456</p>
+            </div>
+          </div>
+          <div class="footer-sitemap">
+            <h2>Sitemap</h2>
+            <p>
+              <a href="./index.html">Home</a
+              ><i class="fa-solid fa-house-chimney"></i>
+            </p>
+            <p>
+              <a href="./aboutCigars.html">About Cigars</a
+              ><i class="fa-regular fa-smoking"></i>
+            </p>
+            <p>
+              <a href="./cigarMood.html">Cigar Mood</a>
+              <i class="fa-solid fa-face-smile"></i>
+            </p>
+            <p>
+              <a href="./cigarShop.html">Cigar Shop</a
+              ><i class="fa-solid fa-bag-shopping"></i>
+            </p>
+            <p>
+              <a href="./contact.html">Contact Us</a
+              ><i class="fa-solid fa-address-book"></i>
+            </p>
+          </div>          <div class="footer-icons-container">
+            <div class="subscribe-container">
+              <h3>Don`t miss out!</h3>
+              <p>Be the first to know about Cigar Bar news and events.</p>
+              <form class="footer-form-container">
+                <input type="text" placeholder="Email" />
+                <button type="submit">SIGN UP</button>
+              </form>
+              <div class="social-icons-container-footer">
+                <div class="facebook-footer">
+                  <a href="https://www.facebook.com/" target="_blank"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </div>
+                <div class="tiktok-footer">
+                  <a href="https://www.tiktok.com/en/" target="_blank"
+                    ><i class="fa-brands fa-tiktok"></i
+                  ></a>
+                </div>
+                <div class="instagram-footer">
+                  <a href="https://www.instagram.com/" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+                <div class="youtube-footer">
+                  <a href="https://www.youtube.com/" target="_blank"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; Diana Daraban</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

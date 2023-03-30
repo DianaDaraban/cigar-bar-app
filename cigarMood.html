@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Ephesis&family=Great+Vibes&family=Mr+De+Haviland&family=Mrs+Saint+Delafield&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/a8f2219a83.css"
+      crossorigin="anonymous"
+    /> -->
+
+    <script
+      src="https://kit.fontawesome.com/a8f2219a83.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./commonElem.css" />
+    <link rel="stylesheet" href="./commonEffects.css" />
+    <link rel="stylesheet" href="./cigarMood.css" />
+    <link rel="stylesheet" href="./mediaQuery.css" />
+
+    <script defer type="module" src="./commonElem.js"></script>
+
+    <script defer type="module" src="./cigarMood.js"></script>
+    <title>Cigar Bar Website</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- SUSCRIBTION BUTTON -->
+      <!-- SUSCRIBTION BUTTON -->
+      <a href="#logo" class="gift">
+        <div class="gift-text"></div>
+        <div class="number">1</div>
+      </a>
+
+      <div class="pop-up hidden">
+        <div class="left-img">
+          <img src="./img/whiskyAndTobacco.jpg" alt="cigar" />
+        </div>
+        <div class="right-info">
+          <span class="close-btn">&times;</span>
+          <h1>Unlock 10% off your first order</h1>
+          <h2>Sign up for special offers and updates</h2>
+          <input
+            type="email"
+            placeholder="Email"
+            value=""
+            class="input-data"
+            required
+          />
+          <button type="submit" class="submit-btn">Unlock offer</button>
+          <h4>By signing up, you agree to receive email marketing</h4>
+          <h3 class="close-btn">No, thanks</h3>
+        </div>
+      </div>
+      <div class="popUp-background hidden"></div>
+
+      <!-- MAIN CONTAINER THAT HOLD THE UPPER INFORMATION -->
+      <!-- MAIN CONTAINER THAT HOLD THE UPPER INFORMATION -->
+      <div class="main-container">
+        <video autoplay muted loop id="myVideo">
+          <source src="./img/smoke6.mp4" type="video/mp4" />
+        </video>
+
+        <!-- NAVIGATION BAR -->
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar">
+          <div class="logo" id="logo"></div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="aboutCigars.html">About Cigars</a>
+            </li>
+            <li>
+              <a href="./cigarMood.html" class="current-page">Cigar mood</a>
+            </li>
+            <li><a href="cigarShop.html">Cigar shop</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+          <div class="right-side-btns">
+            <!-- SEARCHING BOX -->
+            <!-- SEARCHING BOX -->
+            <!-- SEARCHING BOX -->
+            <div class="search-label">
+              <input
+                type="text"
+                value=""
+                placeholder="Search"
+                class="search-input"
+              />
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </div>
+            <!-- SIGN IN BOX -->
+            <!-- SIGN IN BOX -->
+            <!-- SIGN IN BOX -->
+            <div class="sign-in-container">
+              <div class="sign-in-icon"><i class="fa-solid fa-user"></i></div>
+              <div class="sign-in-pop hidden">
+                <div class="left-img-sign">
+                  <h2 class="left-title">New Here?</h2>
+                  <p>Sign up and discover a great amount of new offers!</p>
+                  <button class="sign-up">Sign Up</button>
+                </div>
+
+                <div class="right-info-sign">
+                  <span class="close-btn-sign">&times;</span>
+                  <h2>Login to your account</h2>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    value=""
+                    class="input-data-sign"
+                    required
+                  />
+                  <input
+                    type="password"
+                    placeholder="Password (8 characters minimum)"
+                    required
+                    id="password"
+                    name="password"
+                    minlength="8"
+                    autocomplete="current-password"
+                  />
+                  <button type="submit" class="submit-btn-sign">Sign In</button>
+                  <div class="forgot-password">Forgot password?</div>
+                </div>
+              </div>
+              <div class="sign-in-background hidden"></div>
+            </div>
+            <!-- SHOPPING CART CONTAINER -->
+            <!-- SHOPPING CART CONTAINER -->
+            <!-- SHOPPING CART CONTAINER -->
+            <div class="shopping-cart-container">
+              <div class="shopping-cart-icon">
+                <i class="fa-regular fa-cart-shopping"></i>
+                <div class="shopping-counter">0</div>
+              </div>
+              <div class="shopping-cart hidden">
+                <div class="info-container">
+                  <span class="close-btn">&times;</span>
+                  <div class="products-first-row">
+                    <div class="product">Product</div>
+                    <div class="quantity">Quantity</div>
+                    <div class="price">Price</div>
+                    <div class="remove-btn">Remove</div>
+                  </div>
+                  <div class="items-row">
+                    <div class="item">Product</div>
+                    <div class="item-quantity">
+                      <div class="decr-container">
+                        <i class="fa-sharp fa-solid fa-minus"></i>
+                      </div>
+                      <div class="counter-container">1</div>
+                      <div class="incr-container">
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                    <div class="item-price-box">299 €</div>
+                    <div class="item-remove-btn">&times;</div>
+                  </div>
+                  <!-- <input
+                    type="email"
+                    placeholder="Email"
+                    value=""
+                    class="input-data"
+                    required
+                  />
+                  <button type="submit" class="submit-btn">Unlock offer</button>
+                  <h4>By signing up, you agree to receive email marketing</h4> -->
+                  <h3 class="shipping close-btn">No, thanks</h3>
+                </div>
+              </div>
+              <div class="shopping-background hidden"></div>
+            </div>
+          </div>
+        </nav>
+        <!-- SOCIAL ICONS -->
+        <!-- SOCIAL ICONS -->
+        <div class="social-icons">
+          <div class="facebook">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="tiktok">
+            <a href="https://www.tiktok.com/en/" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+          <div class="instagram">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="youtube">
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <!-- HEADER WITH INFORMATIONS -->
+        <!-- HEADER WITH INFORMATIONS -->
+        <div class="video-container">
+          <div class="mood-items-container">
+            <!-- FIRST MOOD MODULE - LOCATION -->
+            <!-- FIRST MOOD MODULE - LOCATION -->
+            <!-- FIRST MOOD MODULE - LOCATION -->
+            <div class="mood-first-item-container">
+              <img
+                src="./img/location3.jpg"
+                alt="location"
+                class="img-location-background"
+              />
+
+              <h1 class="mood-item-title reveal5 fade-left">Our Location</h1>
+              <div class="item-interior-elements-container reveal6 fade-right">
+                <div class="left-picture-container">
+                  <img
+                    src="./img/location3.jpg"
+                    alt="location"
+                    class="img-location-background2"
+                  />
+                </div>
+                <div class="description-container">
+                  <h3 class="description-title reveal7 fade-right">
+                    Welcome to our original Cigar Club!
+                  </h3>
+                  <h4 class="description-subtitle reveal8 fade-right">
+                    Enjoy an upscale social smoking experience with cigar, food
+                    and drink menus tailored by connoisseurs.
+                  </h4>
+                  <p class="description-text reveal9 fade-right">
+                    A luxury lounge and retail shop designed to meet your cigar
+                    needs in a premium social setting. Show up to enjoy a
+                    variety of premium cigars from around the world.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECOND MODULE -->
+            <!-- SECOND MODULE -->
+
+            <div class="mood-second-item-container">
+              <img
+                src="./img/whisky.jpg"
+                alt="location"
+                class="img-location-background-2"
+              />
+
+              <h1 class="mood-item-title-2">Our Music</h1>
+              <div class="item-interior-elements-container-2">
+                <div class="description-container-2">
+                  <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/artist/2drWtnPHCFmCpu7HkCRCpR?utm_source=generator"
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="quote-container">
+                <p>
+                  “Music gives a soul to the universe, wings to the mind, flight
+                  to the imagination, and life to everything.”
+                </p>
+                <h3 class="author">Plato</h3>
+              </div>
+
+              <div class="wave-container">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+              </div>
+            </div>
+
+            <!-- END OF SECOND MODULE -->
+
+            <!-- THIRD MODULE -->
+            <!-- THIRD MODULE -->
+
+            <div class="mood-third-item-container">
+              <img
+                src="./img/cigarPic1.jpeg"
+                alt="location"
+                class="img-location-background-3"
+              />
+
+              <h1 class="mood-item-title-3">Our special customers</h1>
+              <div class="item-interior-elements-container-3">
+                <svg viewbox="0 0 50 50" width="80" height="80" class="svg-1">
+                  <defs>
+                    <mask id="mask1" x="0" y="0" width="100" height="49">
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="49"
+                        height="49"
+                        fill="#fff"
+                      />
+                      <text
+                        x="24"
+                        text-anchor="middle"
+                        y="50"
+                        dy="0"
+                        class="text-1"
+                      >
+                        No.1
+                      </text>
+                      <!-- <text x="28" id="ltrV" text-anchor="middle" y="50" dy="0">
+                        U
+                      </text>
+                      <text x="35" text-anchor="middle" y="50" dy="0">R</text> -->
+                    </mask>
+                  </defs>
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="49"
+                    height="49"
+                    mask="url(#mask1)"
+                    fill-opacity="1"
+                    fill="hsla(32, 53%, 74%, 0.9)"
+                  />
+                </svg>
+                <svg viewbox="0 0 50 50" width="80" height="80" class="svg-2">
+                  <defs>
+                    <mask id="mask2" x="0" y="0" width="100" height="49">
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="49"
+                        height="49"
+                        fill="#fff"
+                      />
+                      <text
+                        x="24"
+                        text-anchor="middle"
+                        y="50"
+                        dy="0"
+                        class="text-2"
+                      >
+                        No.2
+                      </text>
+                      <!-- <text x="28" id="ltrV" text-anchor="middle" y="50" dy="0">
+                        U
+                      </text>
+                      <text x="35" text-anchor="middle" y="50" dy="0">R</text> -->
+                    </mask>
+                  </defs>
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="49"
+                    height="49"
+                    mask="url(#mask2)"
+                    fill-opacity="1"
+                    fill="hsla(32, 53%, 74%, 0.9)"
+                  />
+                </svg>
+                <svg viewbox="0 0 50 50" width="80" height="80" class="svg-3">
+                  <defs>
+                    <mask id="mask3" x="0" y="0" width="100" height="49">
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="49"
+                        height="49"
+                        fill="#fff"
+                      />
+                      <text
+                        x="24"
+                        text-anchor="middle"
+                        y="50"
+                        dy="0"
+                        class="text-3"
+                      >
+                        No.3
+                      </text>
+                      <!-- <text x="28" id="ltrV" text-anchor="middle" y="50" dy="0">
+                        U
+                      </text>
+                      <text x="35" text-anchor="middle" y="50" dy="0">R</text> -->
+                    </mask>
+                  </defs>
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="49"
+                    height="49"
+                    mask="url(#mask3)"
+                    fill-opacity="1"
+                    fill="hsla(32, 53%, 74%, 0.9)"
+                  />
+                </svg>
+                <!-- <svg viewbox="0 0 50 305" class="first-picture-container">
+                  <defs>
+                    <mask id="mask" x="0" y="0" class="mask">
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="109"
+                        height="719"
+                        fill="#fff"
+                      />
+                      <text x="20" text-anchor="middle" y="50" dy="0">S</text> 
+                      <text
+                        x="25"
+                        id="ltrV"
+                        text-anchor="middle"
+                        y="25"
+                        dy="250"
+                      >
+                        1
+                      </text>
+                      <text x="30" text-anchor="middle" y="50" dy="0">G</text> 
+                    </mask>
+                  </defs>
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="109"
+                    height="719"
+                    mask="url(#mask)"
+                    fill-opacity="1"
+                    fill="#E3DFD2"
+                  />
+                </svg>
+                <div class="first-picture-container"></div>
+                <div class="left-picture-container-3"></div>
+                <div class="description-container-3"></div> -->
+              </div>
+            </div>
+
+            <!-- END OF THIRD MODULE -->
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER CONTAINER -->
+      <!-- FOOTER CONTAINER -->
+      <!-- FOOTER CONTAINER -->
+      <footer>
+        <div class="footer-main-container">
+          <div class="footer-contact-container">
+            <div class="footer-logo"></div>
+            <div class="footer-address">
+              <h3>Address</h3>
+              <p>15th Smokers street, Veryskmoked District, Wonderland</p>
+            </div>
+            <div class="tel-number">
+              <h3>Phone Number</h3>
+              <p>+40 722 123 456</p>
+            </div>
+          </div>
+          <div class="footer-sitemap">
+            <h2>Sitemap</h2>
+            <p>
+              <a href="./index.html">Home</a
+              ><i class="fa-solid fa-house-chimney"></i>
+            </p>
+            <p>
+              <a href="./aboutCigars.html">About Cigars</a
+              ><i class="fa-regular fa-smoking"></i>
+            </p>
+            <p>
+              <a href="./cigarMood.html">Cigar Mood</a>
+              <i class="fa-solid fa-face-smile"></i>
+            </p>
+            <p>
+              <a href="./cigarShop.html">Cigar Shop</a
+              ><i class="fa-solid fa-bag-shopping"></i>
+            </p>
+            <p>
+              <a href="./contact.html">Contact Us</a
+              ><i class="fa-solid fa-address-book"></i>
+            </p>
+          </div>
+          <div class="footer-icons-container">
+            <div class="subscribe-container">
+              <h3>Don`t miss out!</h3>
+              <p>Be the first to know about Cigar Bar news and events.</p>
+              <form class="footer-form-container">
+                <input type="text" placeholder="Email" />
+                <button type="submit">SIGN UP</button>
+              </form>
+              <div class="social-icons-container-footer">
+                <div class="facebook-footer">
+                  <a href="https://www.facebook.com/" target="_blank"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </div>
+                <div class="tiktok-footer">
+                  <a href="https://www.tiktok.com/en/" target="_blank"
+                    ><i class="fa-brands fa-tiktok"></i
+                  ></a>
+                </div>
+                <div class="instagram-footer">
+                  <a href="https://www.instagram.com/" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+                <div class="youtube-footer">
+                  <a href="https://www.youtube.com/" target="_blank"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; Diana Daraban</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,601 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --GOLD: linear-gradient(
+    45deg,
+    rgba(186, 148, 62, 1) 0%,
+    rgba(236, 172, 32, 1) 20%,
+    rgba(186, 148, 62, 1) 39%,
+    rgba(249, 244, 180, 1) 50%,
+    rgba(186, 148, 62, 1) 60%,
+    rgba(236, 172, 32, 1) 80%,
+    rgba(186, 148, 62, 1) 100%
+  );
+  --FONT1: 'Abel', sans-serif;
+  --HANDWRITING: 'Ephesis', cursive;
+  --FONT2: 'Archivo', sans-serif;
+  --RED: #8c0e0f;
+  --BLUE: #0b2838;
+  --DARKBLUE: #031b28;
+  --BEIGE: #e0bf99;
+  --LIGHTBEIGE: #ffead1;
+}
+
+.pop-up {
+  top: 20%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+.fa-cart-shopping {
+  font-weight: 600;
+  color: var(--RED);
+}
+
+.frame-text {
+  font-size: 3.3rem;
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 0 2em 0 2em;
+}
+
+.video-container {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+/* CIGAR STRUCTURE ARTICLE */
+/* CIGAR STRUCTURE ARTICLE */
+/* CIGAR STRUCTURE ARTICLE */
+.about-cigar-container1 {
+  margin-top: 4em;
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6em;
+}
+
+.anatomy-cigar {
+  margin-right: 4em;
+}
+
+.cigar-structure {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.img-cigar-structure {
+  width: 700px;
+}
+
+.cuts-lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--FONT1);
+  font-size: 1.8rem;
+  color: var(--BEIGE);
+}
+
+.cut-line,
+.cap-line,
+.head-line,
+.band-line,
+.body-line,
+.foot-line,
+.wrapper-line,
+.binder-line,
+.filler-line {
+  width: 5px;
+  height: 150px;
+  border-right: 2px solid var(--BEIGE);
+  position: absolute;
+}
+
+.cut-text,
+.cap-text,
+.head-text,
+.band-text,
+.body-text,
+.foot-text,
+.wrapper-text,
+.binder-text,
+.filler-text {
+  position: absolute;
+}
+
+.cut-line {
+  top: -10px;
+  left: 30px;
+  border-right: 2px dashed var(--BEIGE);
+}
+
+.cut-text {
+  top: -50px;
+  left: 10px;
+}
+
+.cap-line {
+  top: 100px;
+  left: 45px;
+  height: 70px;
+}
+
+.cap-text {
+  top: 170px;
+  left: 25px;
+}
+
+.head-line {
+  top: 100px;
+  left: 115px;
+  height: 70px;
+}
+
+.head-text {
+  top: 170px;
+  left: 90px;
+}
+
+.band-line {
+  top: 100px;
+  left: 250px;
+  height: 70px;
+}
+
+.band-text {
+  top: 170px;
+  left: 225px;
+}
+
+.body-line {
+  top: 100px;
+  left: 500px;
+  height: 70px;
+}
+
+.body-text {
+  top: 170px;
+  left: 480px;
+}
+
+.foot-line {
+  top: 100px;
+  left: 660px;
+  height: 70px;
+}
+
+.foot-text {
+  top: 170px;
+  left: 640px;
+}
+
+.about-cigar-container {
+  width: 80%;
+  color: var(--BEIGE);
+  font-family: var(--FONT1);
+  gap: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.95);
+}
+
+.anatomy-cigar {
+  text-align: justify;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.4rem;
+  font-family: var(--FONT1);
+}
+
+.anatomy-cigar p {
+  color: var(--BEIGE);
+  text-align: justify;
+}
+
+.title-anatomy-cigar,
+.components-description-title {
+  color: var(--RED);
+}
+
+/* CIGAR COMPONENTS ARTICLE */
+/* CIGAR COMPONENTS ARTICLE */
+/* CIGAR COMPONENTS ARTICLE */
+
+.cigar-components-container {
+  width: 80%;
+  position: relative;
+  font-family: var(--FONT1);
+  font-size: 1.8rem;
+  color: var(--BEIGE);
+  display: flex;
+  gap: 5em;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.95);
+}
+
+.img-cigar-components {
+  width: 650px;
+}
+.wrapper-line {
+  top: 120px;
+  left: 150px;
+  height: 150px;
+}
+
+.wrapper-text {
+  top: 270px;
+  left: 105px;
+}
+
+.binder-line {
+  top: 150px;
+  left: 350px;
+  height: 120px;
+}
+
+.binder-text {
+  top: 270px;
+  left: 320px;
+}
+
+.filler-line {
+  top: 190px;
+  left: 520px;
+  height: 80px;
+}
+
+.filler-text {
+  top: 270px;
+  left: 500px;
+}
+
+.components-description-container {
+  text-align: justify;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.4rem;
+}
+
+/*  SECOND CONTAINER STYLING*/
+/*  SECOND CONTAINER STYLING*/
+/*  SECOND CONTAINER STYLING*/
+
+.about-all-container {
+  width: 100vw;
+  height: max-content;
+  /* position: relative; */
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #0a0408,
+    #100911,
+    #120f19,
+    #0f1420,
+    #11192c,
+    #121e38,
+    #152244,
+    #3b1f4e,
+    #611048,
+    #7f0032,
+    #8c0e0f
+  );
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  /* z-index: -4000; */
+}
+
+/* INFORMATION TO KNOW CONTAINER STYLING */
+/* INFORMATION TO KNOW CONTAINER STYLING */
+/* INFORMATION TO KNOW CONTAINER STYLING */
+
+.about-cigar-container {
+  margin-top: 1em;
+  width: 100%;
+  height: max-content;
+  padding: 1em 0 1em 0;
+  font-family: var(--FONT1);
+  color: var(--BEIGE);
+  font-weight: 100;
+  padding-bottom: 6em;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-cigar-title {
+  font-size: 1.8rem;
+  background: var(--GOLD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 200%;
+  background-position: left;
+
+  font-family: var(--FONT1);
+  align-self: flex-start;
+  margin-top: 2em;
+  margin-left: 5em;
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+
+.single-info-container {
+  margin-top: 1em;
+  width: 100%;
+  height: 170px;
+  border: 1px solid hsla(43, 74%, 49%, 0.521);
+  padding: 1em;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-color: hsla(201, 81%, 6%, 0.3);
+  position: relative;
+}
+
+.height {
+  height: max-content;
+}
+
+.single-info-title {
+  font-size: 1.4rem;
+  width: 90%;
+  padding-bottom: 0.7em;
+  border-bottom: 1px solid hsla(43, 74%, 49%, 0.521);
+  color: var(--RED);
+}
+
+.single-info-text-first {
+  font-family: var(--FONT2);
+  font-size: 1.1rem;
+  width: 90%;
+  text-align: justify;
+  padding-top: 0.7em;
+  text-indent: 1.5em;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+.single-info-text {
+  font-family: var(--FONT2);
+  font-size: 1.1rem;
+  width: 90%;
+  text-align: justify;
+  padding-top: 0.7em;
+  text-indent: 1.5em;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+
+.arrow-container {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1.6em;
+  right: 0.4em;
+}
+
+.rotate {
+  transform: rotateX(180deg);
+}
+.read-more {
+  color: var(--RED);
+  padding-left: 1em;
+}
+
+/* REVEALING STYLING CLASSES */
+/* REVEALING STYLING CLASSES */
+/* REVEALING STYLING CLASSES */
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+.reveal3 {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal3.active3 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.active3.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active3.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active3.fade-right {
+  animation: fade-right 1s ease-in;
+}
+.reveal4 {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal4.active4 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.active4.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active4.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active4.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* INFO CONTAINER */
+/* INFO CONTAINER */
+/* INFO CONTAINER */
+.single-info-container {
+  width: 100%;
+}
+
+.single-info-container:last-child {
+  margin-bottom: 22em;
+}
+
+.info-list-container {
+  width: 50%;
+  margin-left: 11em;
+  align-self: flex-start;
+}
+
+.about-all-container {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  position: relative;
+}
+
+/* VIDEO TUTORIALS CONTAINER */
+/* VIDEO TUTORIALS CONTAINER */
+
+.video-tutorials-container {
+  width: 35%;
+  position: absolute;
+  /* background-color: hsla(224, 49%, 8%, 0.671); */
+  right: 5em;
+  top: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
+.video-title {
+  font-family: var(--HANDWRITING);
+  margin-bottom: 0.5em;
+  font-size: 2.4rem;
+  /* text-transform: capitalize; */
+  background: var(--GOLD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 200%;
+  background-position: left;
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+
+.first-video-container,
+.second-video-container,
+.third-video-container,
+.fourth-video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-video-container iframe,
+.second-video-container iframe,
+.third-video-container iframe,
+.fourth-video-container iframe {
+  width: 560px;
+  height: 315px;
+}

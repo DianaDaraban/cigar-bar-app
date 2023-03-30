@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/a8f2219a83.css"
+      crossorigin="anonymous"
+    /> -->
+
+    <script
+      src="https://kit.fontawesome.com/a8f2219a83.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./commonElem.css" />
+    <link rel="stylesheet" href="./commonEffects.css" />
+    <link rel="stylesheet" href="./cigarShop.css" />
+    <link rel="stylesheet" href="./mediaQuery.css" />
+
+    <script defer src="./commonElem.js" type="module"></script>
+
+    <script defer src="./cigarShop.js" type="module"></script>
+
+    <title>Cigar Bar Website</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- SUSCRIBTION BUTTON -->
+      <!-- SUSCRIBTION BUTTON -->
+      <a href="#logo" class="gift">
+        <div class="gift-text"></div>
+        <div class="number">1</div>
+      </a>
+
+      <div class="pop-up hidden">
+        <div class="left-img">
+          <img src="./img/whiskyAndTobacco.jpg" alt="cigar" />
+        </div>
+        <div class="right-info">
+          <span class="close-btn">&times;</span>
+          <h1>Unlock 10% off your first order</h1>
+          <h2>Sign up for special offers and updates</h2>
+          <input type="email" placeholder="Email" value="" class="input-data" />
+          <button type="submit" class="submit-btn">Unlock offer</button>
+          <h4>By signing up, you agree to receive email marketing</h4>
+          <h3 class="close-btn">No, thanks</h3>
+        </div>
+      </div>
+      <div class="popUp-background hidden"></div>
+
+      <!-- MAIN CONTAINER THAT HOLD THE UPPER INFORMATION -->
+      <!-- MAIN CONTAINER THAT HOLD THE UPPER INFORMATION -->
+      <div class="main-container">
+        <!-- NAVIGATION BAR -->
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar">
+          <div class="logo" id="logo"></div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./aboutCigars.html">About Cigars</a></li>
+            <li><a href="./cigarMood.html">Cigar mood</a></li>
+            <li>
+              <a href="./cigarShop.html" class="current-page">Cigar shop</a>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+          <div class="right-side-btns">
+            <!-- SEARCHING BOX -->
+            <!-- SEARCHING BOX -->
+            <!-- SEARCHING BOX -->
+            <div class="search-label">
+              <input
+                type="text"
+                value=""
+                placeholder="Search"
+                class="search-input"
+              />
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </div>
+            <!-- SIGN IN BOX -->
+            <!-- SIGN IN BOX -->
+            <!-- SIGN IN BOX -->
+            <div class="sign-in-container">
+              <div class="sign-in-icon"><i class="fa-solid fa-user"></i></div>
+              <div class="sign-in-pop hidden">
+                <div class="left-img-sign">
+                  <h2 class="left-title">New Here?</h2>
+                  <p>Sign up and discover a great amount of new offers!</p>
+                  <button class="sign-up">Sign Up</button>
+                </div>
+
+                <div class="right-info-sign">
+                  <span class="close-btn-sign">&times;</span>
+                  <h2>Login to your account</h2>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    value=""
+                    class="input-data-sign"
+                    required
+                  />
+                  <input
+                    type="password"
+                    placeholder="Password (8 characters minimum)"
+                    required
+                    id="password"
+                    name="password"
+                    minlength="8"
+                    autocomplete="current-password"
+                  />
+                  <button type="submit" class="submit-btn-sign">Sign In</button>
+                  <div class="forgot-password">Forgot password?</div>
+                </div>
+              </div>
+              <div class="sign-in-background hidden"></div>
+            </div>
+            <!-- SHOPPING CART CONTAINER -->
+            <!-- SHOPPING CART CONTAINER -->
+            <!-- SHOPPING CART CONTAINER -->
+            <div class="shopping-cart-container">
+              <div class="shopping-cart-icon">
+                <i class="fa-regular fa-cart-shopping"></i>
+                <div class="shopping-counter">0</div>
+              </div>
+              <div class="shopping-cart hidden">
+                <div class="info-container">
+                  <span class="close-btn">&times;</span>
+                  <div class="products-first-row">
+                    <div class="product">Products</div>
+                    <div class="quantity">Quantity</div>
+                    <div class="price">Price</div>
+                    <div class="remove-btn">Remove</div>
+                  </div>
+                  <div class="items-row">
+                    <!-- <div class="item">Product</div>
+                    <div class="item-quantity">
+                      <div class="decr-container">
+                        <i class="fa-sharp fa-solid fa-minus"></i>
+                      </div>
+                      <div class="counter-container">1</div>
+                      <div class="incr-container">
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                    <div class="item-price-box">299 €</div>
+                    <div class="item-remove-btn">&times;</div> -->
+                  </div>
+                  <div class="total-amount-container">
+                    <div class="total-text">Subtotal</div>
+                    <div class="total-amount">0 €</div>
+                  </div>
+                  <p class="taxes-message">
+                    Taxes and shipping calculated at checkout
+                  </p>
+
+                  <h3 class="shopping checkout-btn">Check out</h3>
+                  <!-- <div class="checkout-more-info">
+                    <div class="shipping-container">
+                      <p class="shipping-text">Shipping cost</p>
+                      <p class="shipping-text">Free</p>
+                    </div>
+                    <div class="shipping-address-container">
+                      <h4 class="shipping-address-title">Shipping Address</h4>
+                      <div class="shipping-mail-container">
+                        <label for="shipping-email">Email Address</label>
+                        <input
+                          type="email"
+                          id="shipping-email"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                      <div class="shipping-names-container">
+                        <div class="shipping-first-name-container">
+                          <label for="shipping-firstName">First Name</label>
+                          <input
+                            type="text"
+                            id="shipping-firstName"
+                            placeholder="First Name"
+                            required
+                          />
+                        </div>
+                        <div class="shipping-last-name-container">
+                          <label for="shipping-lastName">Last Name</label>
+                          <input
+                            type="text"
+                            id="shipping-lastName"
+                            placeholder="Last Name"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="shipping-street-address">
+                        <label for="shipping-street-address"
+                          >Street Address</label
+                        >
+                        <input
+                          type="text"
+                          id="shipping-street-address"
+                          placeholder="Street Address"
+                          required
+                        />
+                      </div>
+                      <div class="shipping-country-city-container">
+                        <div class="shipping-country-container">
+                          <div class="country-code">
+                            <div class="countryText">Country</div>
+                            <i class="fa-sharp fa-solid fa-angle-down"></i>
+                          </div>
+
+                          <div class="countries-list hidden">
+                            <input
+                              class="search-country-input"
+                              type="text"
+                              placeholder="Search..."
+                            />
+                            <ul class="country-list"></ul>
+                          </div>
+                        </div>
+                        <div class="city-container">
+                          <div class="cityText">City</div>
+                          <i class="fa-sharp fa-solid fa-angle-down"></i>
+                        </div>
+                      </div>
+                      <div class="shipping-phone-number">
+                        <label for="shipping-phone-number">Phone Number</label>
+                        <input
+                          type="number"
+                          id="shipping-phone-number"
+                          placeholder="Phone Number"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <h3 class="shopping order-btn">Place Order</h3>
+                  </div> -->
+                </div>
+              </div>
+              <div class="shopping-background hidden"></div>
+            </div>
+          </div>
+        </nav>
+        <!-- SOCIAL ICONS -->
+        <!-- SOCIAL ICONS -->
+        <div class="social-icons">
+          <div class="facebook">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="tiktok">
+            <a href="https://www.tiktok.com/en/" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+          <div class="instagram">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="youtube">
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <!-- SHOPPING SELECTION LABEL -->
+        <div class="selection-container">
+          <div class="selection-drop">Shopping preferences</div>
+          <div class="selection-label">
+            <div class="selection-arrow">
+              <i class="fa-sharp fa-solid fa-angle-down"></i>
+            </div>
+            <div class="selection-text">Shop by ...</div>
+          </div>
+          <div class="selection-btn">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="dropDown-list hidden"></div>
+        <div class="items-container">
+          <!-- LEFT SIDE DROP DOWN LIST SELECTION -->
+          <!-- LEFT SIDE DROP DOWN LIST SELECTION -->
+          <!-- LEFT SIDE DROP DOWN LIST SELECTION -->
+          <div class="left-side-elements">
+            <!-- BRAND DROP DOWN LIST -->
+            <div class="brand-elements">
+              <div class="brand-elements-label">
+                <div class="brand-text">Select a brand</div>
+                <div class="brand-arrow">
+                  <i
+                    class="fa-sharp fa-solid fa-angle-down left-selection-arrow-brand"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <!-- SIZE DROP DOWN LIST -->
+            <div class="size-elements">
+              <div class="size-elements-label">
+                <div class="size-text">Select a size</div>
+                <div class="size-arrow">
+                  <i
+                    class="fa-sharp fa-solid fa-angle-down left-selection-arrow-size"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <!-- OCCASION DROP DOWN LIST -->
+            <div class="occasion-elements">
+              <div class="occasion-elements-label">
+                <div class="occasion-text">Select a occasion</div>
+                <div class="occasion-arrow">
+                  <i
+                    class="fa-sharp fa-solid fa-angle-down left-selection-arrow-occasion"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <!-- STRENGTH DROP DOWN LIST -->
+            <div class="strength-elements">
+              <div class="strength-elements-label">
+                <div class="strength-text">Select a strength</div>
+                <div class="strength-arrow">
+                  <i
+                    class="fa-sharp fa-solid fa-angle-down left-selection-arrow-strength"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <button class="left-side-selection-btn">Find by selection</button>
+          </div>
+          <!-- END OF LEFT SIDE DROP DOWN SELECTION LIST -->
+          <div class="items-grid"></div>
+        </div>
+        <video autoplay muted loop id="myVideo">
+          <source src="./img/smoke6.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <!-- CONTAINER FOR THE LOWER PART OF THE HOME PAGE -->
+    <!-- FOOTER CONTAINER -->
+    <!-- FOOTER CONTAINER -->
+    <!-- FOOTER CONTAINER -->
+    <footer>
+      <div class="footer-main-container">
+        <div class="footer-contact-container">
+          <div class="footer-logo"></div>
+          <div class="footer-address">
+            <h3>Address</h3>
+            <p>15th Smokers street, Veryskmoked District, Wonderland</p>
+          </div>
+          <div class="tel-number">
+            <h3>Phone Number</h3>
+            <p>+40 722 123 456</p>
+          </div>
+        </div>
+        <div class="footer-sitemap">
+          <h2>Sitemap</h2>
+          <p>
+            <a href="./index.html">Home</a
+            ><i class="fa-solid fa-house-chimney"></i>
+          </p>
+          <p>
+            <a href="./aboutCigars.html">About Cigars</a
+            ><i class="fa-regular fa-smoking"></i>
+          </p>
+          <p>
+            <a href="./cigarMood.html">Cigar Mood</a>
+            <i class="fa-solid fa-face-smile"></i>
+          </p>
+          <p>
+            <a href="./cigarShop.html">Cigar Shop</a
+            ><i class="fa-solid fa-bag-shopping"></i>
+          </p>
+          <p>
+            <a href="./contact.html">Contact Us</a
+            ><i class="fa-solid fa-address-book"></i>
+          </p>
+        </div>
+        <div class="footer-icons-container">
+          <div class="subscribe-container">
+            <h3>Don`t miss out!</h3>
+            <p>Be the first to know about Cigar Bar news and events.</p>
+            <form class="footer-form-container">
+              <input type="text" placeholder="Email" />
+              <button type="submit">SIGN UP</button>
+            </form>
+            <div class="social-icons-container-footer">
+              <div class="facebook-footer">
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+              <div class="tiktok-footer">
+                <a href="https://www.tiktok.com/en/" target="_blank"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+              </div>
+              <div class="instagram-footer">
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+              <div class="youtube-footer">
+                <a href="https://www.youtube.com/" target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; Diana Daraban</p>
+      </div>
+    </footer>
+  </body>
+</html>

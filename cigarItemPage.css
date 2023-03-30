@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --GOLD: linear-gradient(
+    45deg,
+    rgba(186, 148, 62, 1) 0%,
+    rgba(236, 172, 32, 1) 20%,
+    rgba(186, 148, 62, 1) 39%,
+    rgba(249, 244, 180, 1) 50%,
+    rgba(186, 148, 62, 1) 60%,
+    rgba(236, 172, 32, 1) 80%,
+    rgba(186, 148, 62, 1) 100%
+  );
+  --BLACKANDGOLD: linear-gradient(
+    90deg,
+    rgb(255, 249, 237) 0%,
+    rgb(236, 221, 188) 20%,
+    rgba(186, 148, 62, 1) 39%,
+    rgb(255, 255, 255) 50%,
+    rgb(235, 231, 210) 60%,
+    rgba(236, 172, 32, 1) 80%,
+    rgb(255, 255, 255) 100%
+  );
+  --BLACKANDGOLD2: linear-gradient(
+    45deg,
+    rgb(51, 39, 27) 0%,
+    rgb(120, 78, 11) 20%,
+    rgb(161, 114, 4) 39%,
+    rgb(84, 58, 58) 50%,
+    rgb(167, 138, 10) 60%,
+    rgb(194, 137, 13) 80%,
+    rgb(72, 27, 27) 100%
+  );
+  --FONT1: 'Abel', sans-serif;
+  --HANDWRITING: 'Ephesis', cursive;
+  --FONT2: 'Archivo', sans-serif;
+  --RED: #8c0e0f;
+  --BLUE: #0b2838;
+  --DARKBLUE: #031b28;
+  --BEIGE: #e0bf99;
+  --LIGHTBEIGE: #ffead1;
+}
+
+/* THE BIG CONTAINER */
+/* THE BIG CONTAINER */
+
+.navbar {
+  z-index: 3;
+}
+
+.sign-in-pop {
+  top: 17%;
+}
+
+.left-title,
+.right-info-sign h2 {
+  font-family: var(--FONT1);
+  font-size: 2.2rem;
+}
+
+.left-title {
+  margin-top: 2.5em;
+}
+
+.right-info-sign h2 {
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.search-extended {
+  width: 300px;
+  background-color: hsla(32, 53%, 74%, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsla(32, 53%, 74%, 0.3);
+  transition: all 1s;
+}
+
+.container {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* MAIN CONTAINER STYLING. MAIN CONTAINER CONTAINS THE BACKGROUND VIDEO */
+/* MAIN CONTAINER STYLING. MAIN CONTAINER CONTAINS THE BACKGROUND VIDEO */
+/* MAIN CONTAINER STYLING. MAIN CONTAINER CONTAINS THE BACKGROUND VIDEO */
+
+.main-container {
+  width: 100vw;
+  height: max-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    to top,
+    #a78a0a,
+    #a17204,
+    #784e0b,
+    #481b1b,
+    #222224,
+    #26282f,
+    #1e242d,
+    #15202b 60%
+  );
+}
+
+.main-container video {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+video {
+  width: 100vw;
+  height: auto;
+  overflow: auto;
+  object-fit: cover;
+}
+
+/* BACK BUTTON */
+/* BACK BUTTON */
+.back-btn-container {
+  z-index: 1;
+  width: 80%;
+  height: 50px;
+  align-self: flex-start;
+  margin-left: 8em;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  font-family: var(--FONT1);
+  gap: 0.5em;
+  background: var(--BLACKANDGOLD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 200%;
+  background-position: left;
+  backdrop-filter: blur(3px);
+  cursor: pointer;
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+
+.fa-chevron-left {
+  font-size: 2.4rem;
+  height: max-content;
+}
+
+.back-text {
+  width: 16.5%;
+  height: 50px;
+  border-bottom: 2px solid var(--BEIGE);
+  padding-left: 2em;
+  display: flex;
+  align-items: flex-end;
+  justify-items: flex-end;
+  text-align: end;
+  white-space: nowrap;
+  font-size: 1.8rem;
+}
+
+.back-btn-line {
+  width: 81.3%;
+  height: 50px;
+  border-bottom: 2px solid var(--BEIGE);
+}
+
+/* ITEM CONTAINER STYLING */
+/* ITEM CONTAINER STYLING */
+/* ITEM CONTAINER STYLING */
+/* ITEM CONTAINER STYLING */
+.itemDataContainer {
+  z-index: 2;
+  width: 74.5%;
+  height: max-content;
+}
+.item-container {
+  width: 100%;
+  height: max-content;
+  background-color: hsla(33, 100%, 91%, 0.4);
+  backdrop-filter: blur(5px);
+  margin-top: 0.5em;
+  display: flex;
+  gap: 3em;
+  padding: 3em;
+}
+
+.item-img {
+  width: 40%;
+  height: 650px;
+  background-image: url(./items/Ashton-Cabinet-Belicoso.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid var(--BEIGE);
+  box-shadow: 0px 0px 25px hsla(0, 0%, 0%, 0.4);
+  margin-bottom: 3.1em;
+}
+
+/* RIGHT SIDE STYLING */
+/* RIGHT SIDE STYLING */
+/* RIGHT SIDE STYLING */
+
+.right-container {
+  font-family: var(--FONT2);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  color: var(--DARKBLUE);
+  text-transform: capitalize;
+}
+
+/* BRAND AND TITLE DESCRIPTION STYLING OF THE ITEM */
+/* BRAND AND TITLE DESCRIPTION STYLING OF THE ITEM */
+
+.item-titles-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.item-brand {
+  font-family: var(--FONT1);
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  background: var(--GOLD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 200%;
+  background-position: left;
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+
+.item-text-line {
+  font-family: var(--FONT1);
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+.item-title {
+  font-family: var(--FONT1);
+  font-size: 2.2rem;
+}
+
+/* ITEM PRICE STYLING */
+/* ITEM PRICE STYLING */
+
+.item-price {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.fa-tags {
+  font-size: 2rem;
+  color: var(--RED);
+}
+.fa-minus,
+.fa-plus {
+  font-size: 1.2rem;
+  align-self: center;
+  cursor: pointer;
+}
+.item-price span {
+  padding-left: 6em;
+  border-bottom: 2px solid var(--DARKBLUE);
+  font-size: 1.6rem;
+}
+
+/* QUANTITY CONTAINER */
+.quantity-container {
+  display: flex;
+  align-items: end;
+  gap: 0.5em;
+}
+
+.quantity-label {
+  padding-right: 5.5em;
+  border-bottom: 2px solid var(--DARKBLUE);
+}
+
+.quantity-box {
+  width: 100px;
+  height: 35px;
+  border: 1px solid var(--DARKBLUE);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.4rem;
+}
+
+/* ADD TO CART BUTTON STYLING */
+/* ADD TO CART BUTTON STYLING */
+/* ADD TO CART BUTTON STYLING */
+
+.addToCart {
+  font-family: var(--FONT1);
+  font-size: 1.8rem;
+  width: 285px;
+  height: 45px;
+  /* background-color: hsla(0, 82%, 30%, 0.4); */
+  border: 1px solid hsla(201, 86%, 8%, 0.6);
+  color: var(--DARKBLUE);
+  background-color: transparent;
+  backdrop-filter: blur(1px);
+  cursor: pointer;
+}
+
+/* DETAILS STYLING */
+/* DETAILS STYLING */
+/* DETAILS STYLING */
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.3rem;
+}
+
+/* RECOMMENDATION CONTAINER AND ITEMS STYLING */
+/* RECOMMENDATION CONTAINER AND ITEMS STYLING */
+/* RECOMMENDATION CONTAINER AND ITEMS STYLING */
+
+.recommendation-container {
+  width: 100%;
+  height: 350px;
+  background-color: hsla(33, 100%, 91%, 0.4);
+  backdrop-filter: blur(5px);
+  margin-top: 0.5em;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1em 4em 1em 4em;
+  font-family: var(--FONT1);
+}
+
+.recommendation-heading {
+  color: var(--DARKBLUE);
+  font-size: 1.8rem;
+}
+.recommendation-items {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3em;
+}
+
+.recommendation-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.3em 0 0.3em 0;
+  align-items: center;
+  font-weight: bold;
+  color: var(--DARKBLUE);
+  /* background-image: url(./items/avo-ritmo-robusto.jpg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 25px hsla(0, 0%, 0%, 0.4);
+  cursor: pointer;
+}
+
+.recommendation-title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.recommendation-brand {
+  text-transform: capitalize;
+  background: var(--BLACKANDGOLD2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 200%;
+  background-position: left;
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+
+.recommendation-title {
+  width: 100%;
+  background-color: hsla(0, 82%, 30%, 0.35);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-sitemap h2,
+.subscribe-container h3 {
+  font-family: var(--FONT1);
+}
